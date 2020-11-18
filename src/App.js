@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import React from "react"
+import Profilcomponent from "./Profile/Profil component/Profilcomponent";
+import Navbarcomponent from "./Profile/Profil component/Navbar";
+import Bio from "./Profile/Profil component/bio"
+
+import myImg from "./Profile/image.jpg"
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+            <Navbarcomponent />
+<br/>
+<Bio/>
+      <Profilcomponent name="hbh" myimg={myImg}/>
+      
+
     </div>
   );
 }
